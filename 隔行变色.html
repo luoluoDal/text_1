@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        *{margin:0px; padding:0px; }
+        ul,ol{list-style: none;}
+        .box{
+            width:300px;
+            margin:20px auto;
+        }
+        .box li{
+            padding:0 5px;
+            line-height:35px;
+            border-bottom:1px dashed #aaa;
+            text-overflow:ellipsis ;
+            white-space:nowrap;
+            overflow: hidden;
+            cursor:pointer;
+        }
+        /*====css3=====*/
+        /*nth-child(N):当前容器所有子元素中的第N个 Box容器所有子元素中的第一个并且第一个是li的标签
+        *nth-of-type(n):先给当前容器按照某一个标签进行分组，获取分组的第N个
+       *.box li:nth-of-type(1):先获取box中所有li,在获取li中的第一个
+        */
+        /*even：偶数 odd:奇数*/
+        /*.box li:nth-of-type(even){*/
+            /*background:#f4f4f4;*/
+        /*}*/
+        /*.box li:hover{*/
+            /*background:red;*/
+        /*}*/
+        /*.box li:nth-of-type(3n+1){*/
+            /*color:red;*/
+        /*}*/
+        /*.box li:nth-of-type(3n+2){*/
+            /*color:green;*/
+        /*}*/
+        /*.box li:nth-of-type(3n){*/
+            /*color:blue;*/
+        /*}*/
+        .bgColor{background-color:#aaaaaa;}
+    </style>
+
+</head>
+<body>
+<ul class="box" id="box">
+    <li>我是第一行</li>
+    <li>我是第二行</li>
+    <li>我是第三行</li>
+    <li>我是第四行</li>
+    <li>我是第五行</li>
+    <li>我是第六行</li>
+    <li>我是第七行</li>
+    <li>我是第八行</li>
+    <li>我是第九行</li>
+</ul>
+</body>
+<script src="js/changeColor.js"></script>
+</html>
